@@ -5,7 +5,7 @@ import './Card.css'
 import star from './../../../../assets/bi_star-fill.svg'
 import book from './../../../../assets/book-open-01.svg'
 const Card = ({url,author,pages,rating,id}) => {
-    const link='./item/'+`${id}`;
+    const link='/item/'+`${id}`;
 
     const t=useContext(ThemeContext); 
   return (
