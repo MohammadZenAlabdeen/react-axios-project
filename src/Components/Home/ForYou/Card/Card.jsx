@@ -17,7 +17,7 @@ const Card = ({url,author,pages,rating,id}) => {
                         <h1 style={{color:t.theme==='light'?'black':'white'}}>{author}</h1>
                         <div className='details'><span style={{color:t.theme==='light'?'black':'white'}}><img src={book}></img>{pages}</span> <span style={{color:t.theme==='light'?'black':'white'}}><img src={star}></img>{rating}</span></div>
                     </div>
-                    <a href={'/react-axios-project/'+link} style={{color:t.theme==='light'?'white':'black'}}>show details</a>
+                    <a href={link} style={{color:t.theme==='light'?'white':'black'}}>show details</a>
                 </div>
 
   )
