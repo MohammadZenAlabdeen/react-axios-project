@@ -21,7 +21,7 @@ function Home() {
     <Context.Provider value={{theme,toggleTheme}}>
       <div id={theme}>
       <header>
-      <Nav logo={theme==='light' ? light:dark} links={[{'title':'Home','route':'/'},{'title':'News','route':'/#news'},{'title':'Promotion of the mount','route':'/#promotion'},{'title':'Plublishs','route':'/#publish'},{'title':'Subscribe to the newsletter','route':'/#newsletter'}]}></Nav>
+      <Nav logo={theme==='light' ? light:dark} links={[{'title':'Home','route':'/react-axios-project/'},{'title':'News','route':'/react-axios-project/#news'},{'title':'Promotion of the mount','route':'/react-axios-project/#promotion'},{'title':'Plublishs','route':'/react-axios-project/#publish'},{'title':'Subscribe to the newsletter','route':'/react-axios-project/#newsletter'}]}></Nav>
       <Hero title={'Author of august'} head={'Eric-Emanuel Schmitt '} content={'Eric-Emmanuel Schmitt has been awarded more than 20 literary prizes and distinctions, and in 2001 he received the title of Chevalier des Arts et des Lettres. His books have been translated into over 40 languages.'} img={`${book}`} button={'View his boooks'}></Hero>
       </header>
       <ForYou>
