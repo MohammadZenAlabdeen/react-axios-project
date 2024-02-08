@@ -1,0 +1,33 @@
+.ForYou .Container{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content: space-between;
+}
+.ForYou{
+    padding: 70px;
+}
+.ForYou #title{
+
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 122.5%;
+    text-transform: capitalize;
+    padding-bottom: 45px;
+}
+@media  screen and (max-width:992px) {
+    .ForYou .Container{
+        grid-template-columns: repeat(2,auto);
+    }
+    .ForYou #title{
+        font-weight: 500;
+        font-size: 24px;
+        text-align: center;    }
+}
+@media  screen and (max-width:600px) {
+    .ForYou .Container{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+}

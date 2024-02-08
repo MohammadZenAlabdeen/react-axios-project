@@ -1,0 +1,13 @@
+footer{
+    border-top: 1px solid #937DC2;
+}
+footer p{
+    width: 100%;
+    text-align: center;
+    padding: 18px 0;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 171.667%;
+}

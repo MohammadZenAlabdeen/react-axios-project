@@ -1,0 +1,72 @@
+.Map{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 100px 70px;
+}
+.Map .text{
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+}
+.Map .text p{
+    color: var(--Black, #0F0F0F);
+text-align: justify;
+padding-bottom: 40px;
+
+/* body text */
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24.033px; /* 150.208% */
+}
+.Map .text h1{
+    color: var(--Black, #0F0F0F);
+font-family: Inter;
+font-size: 39px;
+font-style: normal;
+font-weight: 600;
+line-height: 49.068px; /* 125.816% */
+}
+.Map .text input{
+    border:none;
+    padding-bottom: 8px;
+    width: 100%;
+    background: none;
+    
+    border-bottom: 1px solid #937DC2;
+}
+.Map .text input::placeholder {
+    color: rgba(147, 125, 194, 0.60);
+    opacity: 1;
+  }
+.Map .text input:focus {
+    outline: none;
+  }
+.Map .text button{
+    background-color: #937DC2;
+    color: white;
+    width: 100%;
+    border: none;
+    height: 50px;
+    text-align: center;
+
+}
+@media screen and (max-width:992px) {
+    .Map{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        padding: 100px 0;
+    }
+    .Map .text{
+        padding: 0 20px;
+    }
+    .Map iframe{
+        width: 100vw !important;
+    }
+}

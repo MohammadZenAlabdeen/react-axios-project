@@ -1,0 +1,107 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 70px 19px 70px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 35px;
+}
+nav li a{
+    text-decoration: none;
+}
+nav .get , .getSide{
+    border: none;
+    background: none;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .side{
+display: none;
+}
+nav .Open{
+
+    background-color: white;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: calc(100vw - 256px);
+    display: none;
+
+}
+
+nav .Open #menuOut  {
+    display: none;
+    background: none;
+    border: none;
+    padding: 20px;
+}
+nav  #menu  {
+    display: none;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+@media  screen and (max-width:992px) {
+    nav .get {
+        display: none;
+    }
+    nav .getSide{
+        margin-top: 30px;
+    }
+    nav ul {
+     display: none;
+    }
+    nav {
+        padding: 36px 20px;
+    }
+    nav img{
+        max-width: 100px;
+    }
+    nav #menu{
+        display: block;
+    }
+    nav .Open{
+        display: block;
+        width: 256px;
+    }
+    nav .Open #menuOut{
+        display: block;
+    }
+    nav .Open div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav .Open div a {
+        font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150.208%;
+text-transform: capitalize;
+width: max-content;
+    }
+    nav .Open div ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 60px 0 50px 20px;  
+        border-bottom: 1px solid #937DC2;
+    }
+    nav .getSide p{
+        width: 256px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
