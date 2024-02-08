@@ -2,7 +2,7 @@
   "name": "vica",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://mohammadzenalabdeen.github.io/books-website-with-axios-and-react-hooks/",
+  "homepage": "https://mohammadzenalabdeen.github.io/react-axios-project/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
