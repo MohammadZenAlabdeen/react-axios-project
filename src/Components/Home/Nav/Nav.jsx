@@ -18,7 +18,7 @@ const Nav = ({logo,links}) => {
         <img src={logo}></img>
         <ul>
             {links.map(element => {
-               return <li><a style={{color:t.theme==='light'?'black':'white'}} href={'https://MohammadZenAlabdeen.github.io/react-axios-project'+element.route} smooth>{element.title}</a></li>
+               return <li><a style={{color:t.theme==='light'?'black':'white'}} href={element.route} smooth>{element.title}</a></li>
             })}
         </ul>
         <button onClick={()=>{t.toggleTheme()}} className='get'>
