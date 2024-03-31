@@ -1,34 +1,18 @@
-import { createContext, useState } from 'react'
-import './App.css'
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import Nav from './Components/Home/Nav/Nav.jsx';
-  import light from './assets/Logo-Light.svg';
-  import dark from './assets/Logo-Dark.svg';
-import Hero from './Components/Home/Hero/Hero.jsx';
-import book from './assets/book.png'
-import ForYou from './Components/Home/ForYou/ForYou.jsx';
-import Map from './Components/Home/Map/Map.jsx';
-import Footer from './Components/Home/Footer/Footer.jsx';
-import Home from './Components/Home/Home.jsx';
-import { Routes , BrowserRouter } from 'react-router-dom';
-import { Route } from 'react-router-dom';
-import Item from './Components/View/Item/Item.jsx';
-function App() {
+import React from 'react';
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Home from './components/Home/Home';
+import Item from './components/View/Item/Item.jsx';
 
+
+const App = () => {
   return (
-    <>
-    <BrowserRouter>
-    <Routes>
-  <Route path='/react-axios-project/' element={<Home></Home>}></Route>
-  <Route path='/react-axios-project/item/:id' element={<Item></Item>}></Route>
-</Routes>
-    </BrowserRouter>
-
-    </>
-
-
-  )
+    <Router>
+      <Routes>
+        <Route path="/item/:id" element={<Item />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

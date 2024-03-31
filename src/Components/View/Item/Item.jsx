@@ -17,6 +17,7 @@ import './Item.css'
 import { formControlClasses } from '@mui/material';
 
 const Item = ({params}) => {
+    console.log('hi')
     let info = useParams();
     const [data, setdata] = useState([])
     const [theme,setTheme]=useState('light');
